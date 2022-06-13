@@ -504,9 +504,6 @@ class ResultadoTributacao
                     $this->csosn = new Csosn202();
                     $this->csosn->calcula($this->produto);
 
-                    $this->valorCredito = $this->csosn->valorCredito;
-                    $this->percentualCredito = $this->csosn->percentualCredito;
-
                     switch ($this->csosn->modalidadeDeterminacaoBcIcmsSt) {
                         case ModalidadeDeterminacaoBcIcmsSt::MargemValorAgregado:
                             $this->percentualMva = $this->csosn->percentualMvaSt;
